@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.throttle=function(t,e){var n=!1;function o(){n=!1}return function(){n||(n=!0,setTimeout(o,e||0),t.apply(this,arguments))}.bind(this)};
