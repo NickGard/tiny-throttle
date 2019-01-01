@@ -10,7 +10,7 @@ exports.throttle = function throttle(fn, interval) {
     if (!isWaiting) {
       isWaiting = true;
       setTimeout(stopWaiting, interval || 0);
-      fn.apply(this, arguments);
+      return fn.apply(this, arguments);
     }
   }.bind(this);
 };
