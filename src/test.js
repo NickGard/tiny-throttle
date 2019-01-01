@@ -40,7 +40,7 @@ describe("tiny-throttle", () => {
     throttledFn("a");
     expect(fn.calledWithExactly("a")).to.be.true;
   });
-  it.only("should use the bound context", () => {
+  it("should use the bound context", () => {
     const fn = sinon.spy(function() {
       return this;
     });
